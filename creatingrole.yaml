@@ -1,0 +1,13 @@
+piVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: roleosama
+  namespace: osama
+rules:
+- apiGroups: [""]
+  verbs: ["list","get"]
+  resources: ["services"]
+
+
+
+##this will create role for namespace osama and grant access to list and get services.
